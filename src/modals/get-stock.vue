@@ -46,10 +46,9 @@ export default {
       this.no_data = false
       this.clicked = true
       this.data = []
-      //setTimeout(()=>{this.clicked = false}, 200)
       simulateAsyncReq(payload)
         .then((response) => {
-          this.data = response ;console.log(response)
+          this.data = response
           this.data = response.stocks.map((item,i) => {
             return {
               stock: item,
