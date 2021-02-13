@@ -1,10 +1,10 @@
 <template>
   <div class="main">
     <div class="get_data" @click="getData" :class="[ clicked ? 'clicked' : '']">Get data</div>
-    <temolate v-if="clicked">
+    <template v-if="clicked">
       <div class="loading">...loading</div>
-    </temolate>
-    <temolate v-else>
+    </template>
+    <template v-else>
       <div v-if="data.length" class="show_data">
         <div class="table_head">
           <div>Stock</div>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div v-else-if="no_data">no data</div>
-    </temolate>
+    </template>
   </div>
 </template>
 
