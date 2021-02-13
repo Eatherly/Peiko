@@ -1,4 +1,4 @@
 # Peiko
-npm i
-npm run serve
-npm run build
+#npm i
+#npm run serve
+#npm run build
